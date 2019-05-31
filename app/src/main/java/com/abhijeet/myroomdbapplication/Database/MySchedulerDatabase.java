@@ -22,7 +22,7 @@ public abstract class MySchedulerDatabase extends RoomDatabase {
     public static MySchedulerDatabase getAppDatabase(Context context) {
         if (INSTANCE == null) {
             INSTANCE =
-                    Room.databaseBuilder(context.getApplicationContext(), MySchedulerDatabase.class, "Parapay-database")
+                    Room.databaseBuilder(context.getApplicationContext(), MySchedulerDatabase.class, "MySchedulerDatabase")
                             .allowMainThreadQueries()
                             .build();
         }
